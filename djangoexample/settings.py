@@ -25,7 +25,7 @@ SECRET_KEY = 'h(vmzdhd$5xqzd$m*%cf5^6!gcsz)l=99^y^360h^o%@x5($2g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
