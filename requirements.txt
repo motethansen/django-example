@@ -19,10 +19,6 @@ coreschema==0.0.4
 cryptography==36.0.2
 dill==0.3.4
 Django==4.0.2
-django-classy-tags==3.0.1
-django-cms==3.10.0
-django-cors-headers==3.11.0
-django-crispy-forms==1.14.0
 django-environ==0.8.1
 django-formtools==2.3
 django-geolocation-fields==0.1.8
