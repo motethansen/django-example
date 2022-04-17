@@ -89,9 +89,12 @@ DATABASES = {
         # 'NAME': env('DATABASE_NAME'),
         # 'USER': env('DATABASE_USER'),
         # 'PASSWORD': env('DATABASE_PASS'),
-        'NAME' : os.environ['DATABASE_NAME'],
-        'USER': os.environ['DATABASE_USER'],
-        'PASSWORD': os.environ['DATABASE_PASS'],
+        # 'NAME' : os.environ['DATABASE_NAME'],
+        # 'USER': os.environ['DATABASE_USER'],
+        # 'PASSWORD': os.environ['DATABASE_PASS'],
+        'NAME': 'djangoexampledb',
+        'USER': 'motethansen',
+        'PASSWORD': 'L9gnd8v3>Takeal00k',
         'HOST': 'smartcitygames.cdobvnsfybbo.ap-southeast-1.rds.amazonaws.com',
 	    'PORT': '3306'
         }
