@@ -1,0 +1,1 @@
+ERROR: InvalidSyntaxError - You must use the format KEY=VALUE to set an environment variable. Variables must start with a letter.
