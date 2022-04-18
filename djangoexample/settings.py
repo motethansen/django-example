@@ -13,11 +13,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 
-import environ
-# Initialise environment variables
-env = environ.Env()
-environ.Env.read_env()
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -83,16 +78,16 @@ WSGI_APPLICATION = 'djangoexample.wsgi.application'
 #      'ENGINE': 'django.db.backends.sqlite3',
 #      'NAME': BASE_DIR / 'db.sqlit3', 
 
-
-DATABASES = {
-    'default': {
-    'ENGINE':'django.db.backends.mysql',
     # 'NAME': env('DATABASE_NAME'),
     # 'USER': env('DATABASE_USER'),
     # 'PASSWORD': env('DATABASE_PASS'),
     # 'NAME' : os.environ['DATABASE_NAME'],
     # 'USER': os.environ['DATABASE_USER'],
     # 'PASSWORD': os.environ['DATABASE_PASS'],
+
+DATABASES = {
+    'default': {
+    'ENGINE':'django.db.backends.mysql',
     'NAME': 'djangoexampledb',
     'USER': 'motethansen',
     'PASSWORD': 'L9gnd8v3>Takeal00k',
