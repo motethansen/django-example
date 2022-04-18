@@ -83,39 +83,23 @@ WSGI_APPLICATION = 'djangoexample.wsgi.application'
 #      'ENGINE': 'django.db.backends.sqlite3',
 #      'NAME': BASE_DIR / 'db.sqlit3', 
 
-if 'RDS_DB_NAME' in os.environ:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            # 'NAME': os.environ['RDS_DB_NAME'],
-            # 'USER': os.environ['RDS_USERNAME'],
-            # 'PASSWORD': os.environ['RDS_PASSWORD'],
-            # 'HOST': os.environ['RDS_HOSTNAME'],
-            # 'PORT': os.environ['RDS_PORT'],
-            'NAME': 'djangoexampledb',
-            'USER': 'motethansen',
-            'PASSWORD': 'L9gnd8v3>Takeal00k',
-            'HOST': 'smartcitygames.cdobvnsfybbo.ap-southeast-1.rds.amazonaws.com',
-            'PORT': '3306'
-        }
+
+DATABASES = {
+    'default': {
+    'ENGINE':'django.db.backends.mysql',
+    # 'NAME': env('DATABASE_NAME'),
+    # 'USER': env('DATABASE_USER'),
+    # 'PASSWORD': env('DATABASE_PASS'),
+    # 'NAME' : os.environ['DATABASE_NAME'],
+    # 'USER': os.environ['DATABASE_USER'],
+    # 'PASSWORD': os.environ['DATABASE_PASS'],
+    'NAME': 'djangoexampledb',
+    'USER': 'motethansen',
+    'PASSWORD': 'L9gnd8v3>Takeal00k',
+    'HOST': 'smartcitygames.cdobvnsfybbo.ap-southeast-1.rds.amazonaws.com',
+    'PORT': '3306'
     }
-else:
-    DATABASES = {
-        'default': {
-        'ENGINE':'django.db.backends.mysql',
-        # 'NAME': env('DATABASE_NAME'),
-        # 'USER': env('DATABASE_USER'),
-        # 'PASSWORD': env('DATABASE_PASS'),
-        # 'NAME' : os.environ['DATABASE_NAME'],
-        # 'USER': os.environ['DATABASE_USER'],
-        # 'PASSWORD': os.environ['DATABASE_PASS'],
-        'NAME': 'djangoexampledb',
-        'USER': 'motethansen',
-        'PASSWORD': 'L9gnd8v3>Takeal00k',
-        'HOST': 'smartcitygames.cdobvnsfybbo.ap-southeast-1.rds.amazonaws.com',
-	    'PORT': '3306'
-        }
-    }
+}
 
 
 # Password validation
