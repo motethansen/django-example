@@ -87,12 +87,14 @@ WSGI_APPLICATION = 'djangoexample.wsgi.application'
 
 DATABASES = {
     'default': {
-    'ENGINE':'django.db.backends.mysql',
-    'NAME': 'djangoexampledb',
-    'USER': 'motethansen',
-    'PASSWORD': 'L9gnd8v3>Takeal00k',
-    'HOST': 'smartcitygames.cdobvnsfybbo.ap-southeast-1.rds.amazonaws.com',
-    'PORT': '3306'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlit3',
+    # 'ENGINE':'django.db.backends.mysql',
+    # 'NAME': 'djangoexampledb',
+    # 'USER': 'motethansen',
+    # 'PASSWORD': 'L9gnd8v3>Takeal00k',
+    # 'HOST': 'smartcitygames.cdobvnsfybbo.ap-southeast-1.rds.amazonaws.com',
+    # 'PORT': '3306'
     }
 }
 
