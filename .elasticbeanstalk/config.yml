@@ -2,6 +2,10 @@ branch-defaults:
   main:
     environment: django-example-dev
     group_suffix: null
+environment-defaults:
+  django-example-dev:
+    branch: null
+    repository: null
 global:
   application_name: django-example
   branch: null
