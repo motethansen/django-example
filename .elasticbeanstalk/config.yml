@@ -1,9 +1,9 @@
 branch-defaults:
   main:
-    environment: djangoexample-dev
+    environment: null
     group_suffix: null
 global:
-  application_name: djangoexample
+  application_name: django-example
   branch: null
   default_ec2_keyname: aws-eb
   default_platform: Python 3.8 running on 64bit Amazon Linux 2
